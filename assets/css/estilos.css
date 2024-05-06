@@ -1,0 +1,147 @@
+/* GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Open-Sans' , sans-serif;
+}
+.flex-container {
+    display: flex;
+}
+
+/* ZONA CHATS */
+
+aside {
+    height: 100vh;
+    width: 20vw;
+}
+.descripcion {
+    font-size: 14px;
+    font-weight: 200;
+}
+.inicio {
+    display: flex;
+    padding-top: 8px;
+    justify-content: center;
+    border: thin solid rgb(131, 131, 131);
+}
+.perfil {
+    display: flex;
+    width: 100%;
+}
+.imagen {
+    padding: 10px 0px 0px 10px;
+}
+.imagen img {
+    border-radius: 50%;
+    width: 30px;
+}
+.info {
+    padding: 0px 10px 0px 10px;
+    line-height: 5px;
+}
+.menu {
+    display: flex;
+    padding: 17px 10px 10px 10px;
+}
+.menu i {
+    position: relative;
+    width: 30px;
+    color: #e8ebe4;
+}
+.nuevo {
+    border: thin solid rgb(131, 131, 131);
+    padding: 40px 50px 40px 60px;
+}
+.nuevo button {
+    padding: 10px 45px 10px 45px;
+    border-radius: 0px;
+    background-color: #a491d2;
+    color: white;
+}
+.nuevo button:hover {
+    background-color: #cdc3e6;
+}
+.nuevo button:focus {
+    background-color: #bec1bb;
+}
+.chat {
+    display: flex;
+    align-items: center;
+    border: thin solid  rgb(131, 131, 131);
+    padding: 7px;
+}
+.chat img {
+    border-radius: 50%;
+    width: 40px;
+    padding: 5px;
+}
+.text {
+    padding-left: 15px;
+    line-height: 5px;
+}
+
+/* DEMOSTRACION CHAT */
+
+#imagen-animada {
+    width: 0;
+    background-image: url(../imgs/chat3.png);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: width 0.5s ease;
+}
+#boton-checkbox-1,
+#boton-checkbox-2,
+#boton-checkbox-3,
+#boton-checkbox-4,
+#boton-checkbox-5,
+#boton-checkbox-6,
+#boton-checkbox-7,
+#boton-checkbox-8 {
+    display: none;
+}
+#boton-checkbox-1:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-2:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-3:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-4:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-5:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-6:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-7:checked + .boton-animado + #imagen-animada,
+#boton-checkbox-8:checked + .boton-animado + #imagen-animada
+{
+    width: 80%;
+}
+
+/* PRINCIPAL */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    background-color: #e8ebe4;
+}
+.principal img {
+    width: 270px;
+    align-self: center;
+    padding-bottom: 13px;
+}
+.texto-p {
+    text-align: center;
+}
+.texto-p h1 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+}
+.texto-p p {
+    line-height: 1;
+    margin: 0;
+    white-space: pre-line;
+    text-align: center;
+    font-weight: 300;
+}
+
+
